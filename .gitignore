@@ -19,3 +19,7 @@ db.properties
 
 .DS_Store
 Thumbs.db
+
+myntrademo_db.sql
+
+*.sql
