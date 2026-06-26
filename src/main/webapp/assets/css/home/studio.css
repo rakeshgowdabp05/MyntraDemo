@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #282c3f;
+  font-family: "Assistant", sans-serif;
+}
+
+.studio-page {
+  padding-bottom: 80px;
+}
+
+.studio-hero {
+  min-height: 420px;
+  background:
+    radial-gradient(
+      circle at 75% 25%,
+      rgba(255, 255, 255, 0.75),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #fff1f4, #ffe2aa 52%, #f3e8ff);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 44px 18px;
+}
+
+.studio-hero div {
+  width: min(760px, 100%);
+}
+
+.studio-hero span {
+  color: #ff3f6c;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.studio-hero h1 {
+  margin: 14px 0 12px;
+  color: #282c3f;
+  font-size: 54px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.studio-hero p {
+  margin: 0 auto;
+  width: min(580px, 100%);
+  color: #535766;
+  font-size: 19px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.studio-hero a {
+  width: 220px;
+  height: 48px;
+  margin: 28px auto 0;
+  background: #282c3f;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.studio-grid {
+  width: min(1120px, calc(100% - 32px));
+  margin: 44px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.studio-card {
+  min-height: 270px;
+  border: 1px solid #eaeaec;
+  color: #ffffff;
+  display: grid;
+  align-content: end;
+  padding: 0;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 18px rgba(40, 44, 63, 0.12);
+}
+
+.studio-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(20, 22, 32, 0.78),
+    rgba(20, 22, 32, 0.1)
+  );
+}
+
+.studio-card div {
+  position: relative;
+  z-index: 1;
+  padding: 22px;
+}
+
+.studio-card strong {
+  display: block;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.studio-card span {
+  margin-top: 8px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.studio-men {
+  background-image: url("https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=900&h=1200&q=80");
+}
+
+.studio-women {
+  background-image: url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&h=1200&q=80");
+}
+
+.studio-kids {
+  background-image: url("https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=900&h=1200&q=80");
+}
+
+.studio-latest {
+  background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&h=1200&q=80");
+}
+
+@media (max-width: 900px) {
+  .studio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .studio-hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .studio-grid {
+    grid-template-columns: 1fr;
+  }
+}
